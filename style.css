@@ -1,0 +1,111 @@
+/* style.css */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5; /* normal page scroll background */
+}
+
+/* PROFILE HEADER */
+.profile-header {
+    position: relative;
+    width: 100%;
+    height: 370px; /* header height */
+    background-color: #f0f2f5;
+}
+
+/* Cover Photo */
+.cover-photo {
+    width: 100%;
+    height: 300px; /* only top part */
+    background: url('images/cover.jpg') center/cover no-repeat;
+}
+
+/* Profile Picture Container */
+.profile-pic-container {
+    position: absolute;
+    width: 100%;
+    top: 180px; /* position profile pic overlapping cover */
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid rgb(22, 22, 22);
+    background: url('images/profile.jpg') center/cover no-repeat;
+}
+
+/* Name and Bio */
+.name-bio {
+    position: absolute;
+    width: 100%;
+    top: 370px; /* below profile picture */
+    text-align: center;
+}
+
+.name-bio h1 {
+    font-size: 28px;
+    color: #111;
+}
+
+.name-bio p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-top: 100px; /* spacing after header */
+    padding: 20px;
+}
+
+/* Social Links */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.socials a {
+    background: rgb(244, 239, 239);
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(241, 235, 235, 0.948);
+    transition: 0.2s;
+}
+
+.socials a:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px 60px 20px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #555;
+    line-height: 1.6;
+}
