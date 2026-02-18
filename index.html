@@ -1,52 +1,184 @@
-<!--index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- PROFILE HEADER -->
-    <header class="profile-header">
-        <div class="cover-photo"></div>
-        <div class="profile-pic-container">
-            <div class="profile-pic"></div>
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="cover-photo"></div>
+
+    <div class="hero-inner">
+      <div class="profile-pic" aria-label="Profile picture"></div>
+
+      <div class="hero-text">
+        <h1>UNIQUE》SHREE</h1>
+        <p class="subtitle">Games Development student • Building 3D games & apps</p>
+
+        <p class="tagline">
+          LWJGL 3D Maze • Salon Booking App • Writing App • More projects coming soon!
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
         </div>
-        <div class="name-bio">
-            <h1>UNIQUE》SHREE</h1>
-            <p>Coding, dreaming, just an average girl trying to be better🌸:)</p>
+
+        <div class="socials">
+          <a href="https://www.tiktok.com/@unique_shree20" target="_blank">TikTok</a>
+          <a href="https://www.youtube.com/@ShristiBhandari-l6i" target="_blank">YouTube</a>
+          <a href="https://github.com/shristi7304" target="_blank">GitHub</a>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Twitter</a>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-        <section class="socials">
-            <a href="https://www.tiktok.com/@unique_shree20" target="_blank">TikTok</a>
-            <a href="#"target="_blank">Twitter</a>
-            <a href="#"target="_blank">LinkedIn</a>
-            <a href="https://www.youtube.com/@ShristiBhandari-l6i"target="_blank">YouTube</a>
-            <a href="https://github.com/shristi7304"target="_blank">GitHub</a>
-        </section>
+  <main class="container">
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                Hi, I’m Shree.</p>
-<p>A Games Development student currently in my 3rd year in the UK.
-I was born and raise in Nepal and moved to the UK in 2022. I originally studied Science in +2 and planned to go into nursing, but when things didn’t go as expected, I took a leap into a completely different world — game development.</p>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p>
+        Hi, I’m Shree — a 3rd year Games Development student in the UK. I was born and raise in Nepal and moved to the UK in 2022. I originally studied Science in +2 and planned to go into nursing, but when things didn’t go as expected, I took a leap into a completely different world — game development.</p>
+      </p>
+      <p><p>I started with almost no background, something completely unfamiliar. Starting from zero was scary, especially when others already had years of experience. but I found myself loving the challenge.</p>
+      <p>
+        Today, I work mainly with <strong>C# & Unity</strong>, and I’m exploring <strong>Java</strong>, <strong>LWJGL</strong>,
+        <strong>HTML/CSS/JS</strong>, <strong>Python</strong>, and <strong>SQL</strong>.
+      </p>
+      <p> I’m not perfect, but I love the feeling of being able to build something from nothing — even if it takes time, patience, and a lot of debugging.</p></p>
+      <p class="small">
+        Outside of coding: music, nature, and anime 🌸
+      </p>
+    </section>
 
-<p>I started with almost no background, something completely unfamiliar. Starting from zero was scary, especially when others already had years of experience. but I found myself loving the challenge. Today, I work mainly with C# and Unity, and I’m slowly exploring HTML, CSS, JavaScript, Python, SQL, and Java. I’m not perfect at coding yet, but I love the feeling of being able to build something from nothing — even if it takes time, patience, and a lot of debugging.</p>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
 
-<p>Outside of code, I’m happiest listening to music, being in nature, or watching anime.
-I’m a little nervous, clumsy, and not the best with crowds — but I’m determined. My biggest motivation is giving my parents the life they deserve.
-</p>
-        </section>
-    </main>
+      <div class="grid">
 
-    <script src="script.js"></script>
+        <article class="card">
+          <div class="card-top">
+            <h3>Salon Booking App</h3>
+            <p class="muted">An app to manage services, clients, and appointments.</p>
+          </div>
+
+          <ul class="bullets">
+            <li>Booking flow + appointment management</li>
+            <li>Simple UI focused on fast scheduling</li>
+            <li>Built as a practical real-world project</li>
+          </ul>
+
+          <div class="chips">
+            <span class="chip">App</span>
+            <span class="chip">UI</span>
+            <span class="chip">Database</span>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank">GitHub</a>
+            <a class="btn small" href="#" target="_blank">Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>3D Maze Game (LWJGL)</h3>
+            <p class="muted">A 3D maze experience built using LWJGL / OpenGL.</p>
+          </div>
+
+          <ul class="bullets">
+            <li>Player movement + camera controls</li>
+            <li>Maze gameplay in a 3D environment</li>
+            <li>Learning graphics + game programming fundamentals</li>
+          </ul>
+
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">LWJGL</span>
+            <span class="chip">OpenGL</span>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank">GitHub</a>
+            <a class="btn small" href="#" target="_blank">Video</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Writing App</h3>
+            <p class="muted">A clean writing space for drafts and notes.</p>
+          </div>
+
+          <ul class="bullets">
+            <li>Simple editor focused on distraction-free writing</li>
+            <li>Organize notes and drafts in one place</li>
+            <li>Built to practice UX + clean code</li>
+          </ul>
+
+          <div class="chips">
+            <span class="chip">Productivity</span>
+            <span class="chip">UI</span>
+            <span class="chip">Storage</span>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank">GitHub</a>
+            <a class="btn small" href="#" target="_blank">Demo</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="small tip">
+        real GitHub repos .
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+
+      <div class="grid two">
+        <div class="card mini">
+          <h3>Game Dev</h3>
+          <p class="muted">Unity • C# • LWJGL • Basic 3D math & game loops</p>
+        </div>
+        <div class="card mini">
+          <h3>Web / Tools</h3>
+          <p class="muted">HTML • CSS • JavaScript • Git/GitHub • VS Code</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Want to collaborate or see more of my work?</p>
+
+      <div class="contact-row">
+        <a class="btn primary" href="mailto:shristeebhandari17@gmail.com">Email Me</a>
+        <a class="btn" href="https://github.com/shristi7304" target="_blank">GitHub</a>
+        <a class="btn" href="#" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Shree • Built with HTML/CSS</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
